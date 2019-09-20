@@ -56,12 +56,12 @@
                 </ul>
     </div>
 <div class="mt-5">
-    <ul class="nav nav-tabs nav-justified bg-dark">
+    <ul class="nav nav-pills nav-justified bg-dark">
         <li class="nav-item">
             <a href="#" class="nav-link">link1</a>
         </li>
         <li class="nav-item dropdown ">
-            <a href="#" class="nav-link active" data-toggle="dropdown">dropdown</a>
+            <a href="#" class="nav-link active dropdown-toggle " data-toggle="dropdown">dropdown</a>
                 <ul class="dropdown-menu bg-success">
                     <li class="nav-item">
                              <a href="#" class="nav-link ">link1</a>
@@ -83,7 +83,52 @@
         <li class="nav-item">
                 <a href="#" class="nav-link">link5</a>
         </li>
+
     </ul>
+</div>
+<!--nav tigglable-->
+<div class=" mt-5">
+    <ul class="nav nav-tabs bg-dark nav-justified">
+        <li class="nav-item">
+            <a href="#item1" class="nav-link active" data-toggle="tab">home</a>
+        </li>
+        <li class="nav-item">
+            <a href="#item2" class="nav-link" data-toggle="tab">about</a>
+    </li>
+    <li class="nav-item">
+        <a href="#item3" class="nav-link" data-toggle="tab">contact</a>
+    </li>
+    <li class="nav-item">
+        <a href="#item4" class="nav-link" data-toggle="tab">image</a>
+    </li>
+    </ul>
+    <!--tab panes-->
+   <div class="tab-content">
+            <div id="item1" class="tab-pane text-white active bg-dark">
+                <h1 class="text-center">home</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, tempora.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt facere aperiam tenetur culpa quo fuga, nostrum consectetur, repudiandae vel corporis soluta, maxime recusandae excepturi a voluptates esse ullam iusto adipisci!</p>
+            </div>
+            <div id="item2" class="text-white tab-pane fade bg-success">
+                <h1 class="text-center">about</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, tempora.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos repellendus ea, repudiandae ipsa, ipsum sequi consectetur, facere aperiam ex natus vel assumenda eius? Quae iusto corrupti consequuntur, animi recusandae ipsa.
+
+                </p>
+            </div>
+            <div id="item3" class=" tab-pane fade text-white bg-primary">
+                <h1 class="text-center">contact</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, tempora.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, sequi. Modi dolorem asperiores quibusdam impedit, quis delectus nisi eos fuga maiores! Nam similique suscipit eveniet doloribus, vero pariatur beatae distinctio?
+
+                </p>
+            </div>
+            <div id="item4" class=" tab-pane text-white  bg-danger">
+                <h1 class="text-center">image</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, tempora.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam doloribus perferendis ab debitis at vero, eligendi, doloremque aut commodi, laboriosam alias beatae animi facilis voluptatum! Repudiandae commodi culpa aut sit!</p>
+            </div>
+   </div>
 </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.js"></script>
 <script
