@@ -75,7 +75,7 @@
 
 <div class="container pt-5 pb-5" style="border: 2px solid grey; background: rgb(163, 35, 35);">
     <form action="/action.php" class="needs-validation" novalidate>
-        <h1 class="text-center">form validation</h1>
+        <h1 class="text-center">need validation</h1>
 
         <div class="form-group">
             <label for="email">username</label>
@@ -91,14 +91,36 @@
         </div>
         <div class="form-group form-check">
             <label class="form-check-label">
-                <input type="checkbox" class="form-check-input"> I agree all the terms
+                <input type="checkbox" class="form-check-input" required> I agree all the terms
                 <div class="valid-feedback">valid.</div>
-                <div class="invalid-feedback">please fill out this field</div>
+                <div class="invalid-feedback">please check this checkbox to continue</div>
             </label>
         </div>
         <button class="btn btn-secondary">submit</button>
     </form>
 </div>
+<script>
+    (function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Get the forms we want to add validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+
+
+
+</script>
     <script src="/js/bootstrap.js"></script>
 </body>
 </html>
