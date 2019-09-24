@@ -10,7 +10,7 @@
 <body>
     <h1>form learning</h1>
 <div class="container pt-5 pb-5" style="border: 2px solid grey; background: #ccc;">
-    <h2>stacked form</h2>
+    <h2 class="text-center">stacked form</h2>
     <form action="/action.php">
         <div class="form-group">
             <label for="email">Email</label>
@@ -23,13 +23,33 @@
         <div class="form-group form-check">
             <label for="" class="form-check-label">
                 <input type="checkbox" class="form-check-input">
-        Remember me
+                     Remember me
             </label>            
         </div>
         <button class="btn btn-primary">submit</button>
 
  </div>
     </form>
+<div class="container pt-5 pb-5" style="border: 2px solid grey; background: #ccc;">
+    <h1 class="text-center">inline form</h1>
+    <form class="form-inline">
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input class="form-control" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+            <label for="">password</label>
+            <input type="text" class="form-control" placeholder="Enter password">
+        </div>
+        <div class="form-check form-group">
+            <lable class="form-check-lable">
+                <input type="checkbox" class="form-check-input">
+                Remember me
+            </lable>
+        </div>
+        <button class="btn btn-danger">submit</button>
+    </form>
+</div>
     <script src="/js/bootstrap.js"></script>
 </body>
 </html>
