@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <h1 class="display-2">dismiss toast</h1>
+    <div class="toast" data-autohide="false">
+        <div class="toast-header">
+            <strong class="mr-auto text-primary">toast header</strong>
+            <small class="text-muted">5 min ago</small>
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
+        </div>
+        <div class="toast-body">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora consectetur reiciendis ipsam earum voluptatem aut nemo id tenetur ullam aspernatur.
+        </div>
+    </div>
+   <div class="toast" data-autohide="false">
+        <div class="toast-header">
+            <strong class="mr-auto text-primary">toast header</strong>
+            <small class="text-muted">5 min ago</small>
+            <button class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
+        </div>
+        <div class="toast-body">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias ducimus, qui, quod, a laudantium commodi laboriosam porro ratione blanditiis delectus debitis ea alias earum eius necessitatibus! Nobis ullam perferendis ipsam?
+            
+        </div>
+   </div>
+<script>
+        $(document).ready(function(){
+          $('.toast').toast('show');
+        });
+        </script>
+    
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+</body>
+</html>
