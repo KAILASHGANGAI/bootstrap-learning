@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+</head>
+<style>
+body{
+    position: relative;
+}
+ul.nav-pills {
+    top: 20px;
+    position: fixed;
+  }
+  div.col-8 div {
+    height: 500px;
+  }
+</style>
+<body data-spy="scroll " data-target="#myscrollspy" data-offset="1">
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-sm-3 col-4" id="myscrollspy">
+                <ul class="nav nav-pills flex-column">
+                        <li class="nav-item"><a href="#section1" class="nav-link">section1</a></li>
+                        <li class="nav-item"><a href="#section2" class="nav-link">section2</a></li>
+                        <li class="nav-item"><a href="#section3" class="nav-link">section3</a></li>
+                        <li class="nav-item dropdown" >
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">section4</a>
+                            <div class="dropdown-menu">
+                                <a href="#section41" class="dropdown-item">section4-1</a>
+                                <a href="#section42" class="dropdown-item">section4-2</a>
+                            </div>
+                        </li>
+                </ul>
+            </nav>
+            <div class="col-sm-9 col-8">
+                    <div id="section1" class="bg-success">
+                        <h1>section-1</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex magni dolorem optio reprehenderit pariatur voluptates nostrum molestiae, officiis, quae sint suscipit dolore doloremque expedita aliquid impedit enim quis laudantium debitis?
+
+                        </p>
+                    </div>
+                    <div id="section2" class="bg-warning">
+                            <h1>section-2</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex magni dolorem optio reprehenderit pariatur voluptates nostrum molestiae, officiis, quae sint suscipit dolore doloremque expedita aliquid impedit enim quis laudantium debitis?
+    
+                            </p>
+                    </div>
+                    <div id="section3" class="bg-secondary">
+                            <h1>section-3</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex magni dolorem optio reprehenderit pariatur voluptates nostrum molestiae, officiis, quae sint suscipit dolore doloremque expedita aliquid impedit enim quis laudantium debitis?
+    
+                            </p>
+                    </div>
+                    <div id="section41" class="bg-danger">
+                            <h1>section-4-1</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex magni dolorem optio reprehenderit pariatur voluptates nostrum molestiae, officiis, quae sint suscipit dolore doloremque expedita aliquid impedit enim quis laudantium debitis?
+    
+                            </p>
+                    </div>
+                     <div id="section42" class="bg-info">
+                                <h1>section-4-2</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex magni dolorem optio reprehenderit pariatur voluptates nostrum molestiae, officiis, quae sint suscipit dolore doloremque expedita aliquid impedit enim quis laudantium debitis?
+        
+                                </p>
+                    </div>
+            </div>
+        </div>
+    </div>
+<script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.js"></script>
+
+    <script src="./js/bootstrap.js"></script>
+</body>
+</html>
